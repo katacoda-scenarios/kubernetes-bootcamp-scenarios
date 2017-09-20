@@ -1,16 +1,16 @@
-Let’s refresh some of the knowledge gained in the previous chapter. By default, all pods are visible only inside the cluster. To access applications from our localhost, we need to create a proxy between our machine and the Kubernetes cluster with the proxy command:
+Recall that Pods are running in an isolated, private network - so we need to proxy access
+to them so we can debug and interact with them. To do this, we'll use the `kubectl proxy` command to run a proxy in a second terminal window. Click on the command below to automatically open a new terminal and run the `proxy`:
 
-`kubectl proxy`{{execute}}
+`kubectl proxy`{{execute T2}}
 
-The _proxy_ command runs in the foreground. All future commands are run in a separate terminal. Clicking the command will open a new terminal tab.
-
-Get the name of the Pod (in a new terminal window) and store it in the POD_NAME environment variable:
+Now again, we'll get the Pod name and query that pod directly through the proxy.
+To get the Pod name and store it in the POD_NAME environment variable:
 
 `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-echo Name of the Pod: $POD_NAME`{{execute T2}}
+echo Name of the Pod: $POD_NAME`{{execute}}
 
 To see the output of our application, run a `curl` request.
 
-`curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME/`{{execute T2}}
+`curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME/`{{execute}}
 
 The url is the route to the API of the Pod.
