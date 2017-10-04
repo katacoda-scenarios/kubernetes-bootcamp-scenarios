@@ -2,8 +2,7 @@
 
 Katacoda scenarios for the Kubernetes.io site at https://kubernetes.io/docs/tutorials/kubernetes-basics/
 
-
-## Scenarios
+## Scenarios
 
 The ordering is a little confusing and the directories numbering does not match the modules on the Kubernetes site. The relationship is:
 
