@@ -1,8 +1,8 @@
 The Deployment created automatically a label for our Pod. With `describe deployment` command you can see the name of the label:
- 
+
 `kubectl describe deployment`{{execute}}
 
-Let’s use this label to query our list of Pods. We’ll use the `get pod` command with -l as a parameter, followed by the label values:
+Let’s use this label to query our list of Pods. We’ll use the `kubectl get pods` command with -l as a parameter, followed by the label values:
 
 `kubectl get pods -l run=kubernetes-bootcamp`{{execute}}
 
