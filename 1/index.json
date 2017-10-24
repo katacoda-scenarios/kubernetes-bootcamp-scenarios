@@ -1,12 +1,17 @@
 {
+	"live": true,
+	"pathwayId": "kubernetes-bootcamp",
 	"pathwayTitle": "Kubernetes Bootcamp",
+	"id": "1",
 	"backend": {
 		"port": 8080,
-		"imageid": "minikube",
+		"dockerimage": "dind-kubs-v1-3",
 		"env": "minikube"
 	},
+	"files": ["App"],
 	"environment": {
-		"uilayout": "terminal",
+		"uilayout": "terminal-v1",
+		"uidependencies": ["/socket.io/socket.io.js", "/javascripts/term.js", "/javascripts/terminal-application.js"],
 		"hideintro": false,
 		"hidefinish": false
 	},
@@ -33,5 +38,6 @@
 		}
 	},
 	"title": "Module 1",
-	"description": "Create a Kubernetes cluster"
+	"description": "Create a Kubernetes cluster",
+	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
 }
