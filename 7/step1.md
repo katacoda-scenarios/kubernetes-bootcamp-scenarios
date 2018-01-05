@@ -6,7 +6,7 @@ Check that kubectl is configured to talk to your cluster, by running the `kubect
 
 `kubectl version`{{execute}}
 
-OK, kubectl is installed and you can see both the client and the server versions: 1.5.
+OK, kubectl is installed and you can see both the client and the server versions.
 
 To view the nodes in the cluster, run the `kubectl get nodes` command:
 
