@@ -4,8 +4,7 @@
 	"description": "Create a Kubernetes cluster",
 	"backend": {
 		"port": 30000,
-		"imageid": "minikube",
-		"env": "minikube"
+		"imageid": "minikube"
 	},
 	"environment": {
 		"uilayout": "terminal",
