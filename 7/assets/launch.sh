@@ -1,5 +1,5 @@
 echo "Starting Kubernetes..."
-while [ ! -f /opt/katacoda-completed ]
+while [ `docker ps | wc -l` -lt 0 ]
 do
   sleep 1
 done
