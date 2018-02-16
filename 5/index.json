@@ -1,17 +1,14 @@
 {
-	"live": true,
-	"pathwayId": "kubernetes-bootcamp",
+	"title": "Module 5",
+	"description": "Scale up your app",
 	"pathwayTitle": "Kubernetes Bootcamp",
-	"id": "5",
 	"backend": {
-		"port": 8080,
-		"dockerimage": "dind-kubs-v1-3",
-		"env": "minikube"
+		"port": 30000,
+		"dockerimage": "minikube-running"
 	},
 	"files": ["App"],
 	"environment": {
-		"uilayout": "terminal-v1",
-		"uidependencies": ["/socket.io/socket.io.js", "/javascripts/term.js", "/javascripts/terminal-application.js"],
+		"uilayout": "terminal",
 		"hideintro": false,
 		"hidefinish": false
 	},
@@ -35,11 +32,8 @@
 			"text": "finish.md"
 		},
 		"assets": {
-			"client": [{"file": "minikube", "target": "/home/scrapbook/.bin/", "chmod": "+x"},
-								{"file": "launch.sh", "target": "/home/scrapbook/.bin/", "chmod": "+x"}]
+			"host01": [{"file": "launch.sh", "target": "/usr/bin/", "chmod": "+x"}]
 		}
 	},
-	"title": "Module 5",
-	"description": "Scale up your app",
 	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
 }
