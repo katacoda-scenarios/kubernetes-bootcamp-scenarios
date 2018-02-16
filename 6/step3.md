@@ -1,6 +1,6 @@
 Let’s perform another update, and deploy image tagged as `v10` :
 
-`kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v10`{{execute}}
+`kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10`{{execute}}
 
 Use `get deployments` to see the status of the deployment:
 
