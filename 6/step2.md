@@ -9,7 +9,7 @@ echo NODE_PORT=$NODE_PORT`{{execute}}
 
 Next, we’ll do a `curl` to the the exposed IP and port:
 
-`curl `minikube ip`:$NODE_PORT`{{execute}}
+`curl $(minikube ip):$NODE_PORT`{{execute}}
 
 We hit a different Pod with every request and we see that all Pods are running the latest version (v2).
 
