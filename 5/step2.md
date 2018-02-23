@@ -11,4 +11,4 @@ Next, we’ll do a `curl` to the exposed IP and port. Execute the command multip
 
 `curl host01:$NODE_PORT`{{execute}}
 
-We hit a different Pod with every request. This demonstrates that the load-balancing is working.
+In this case, the name `host01` is the `hostname`{{execute}} of the instance running Minikube. We hit a different Pod with every request. This demonstrates that the load-balancing is working.

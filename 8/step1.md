@@ -31,3 +31,5 @@ Now we can test that the app is exposed outside of the cluster using `curl`, the
 `curl host01:$NODE_PORT`{{execute}}
 
 And we get a response from the server. The Service is exposed.
+
+In this case, the name `host01` is the `hostname`{{execute}} of the instance running Minikube. 

@@ -11,7 +11,7 @@ Next, we’ll do a `curl` to the the exposed IP and port:
 
 `curl host01:$NODE_PORT`{{execute}}
 
-We hit a different Pod with every request and we see that all Pods are running the latest version (v2).
+In this case, the name `host01` is the `hostname`{{execute}} of the instance running Minikube. We hit a different Pod with every request and we see that all Pods are running the latest version (v2).
 
 The update can be confirmed also by running a rollout status command:
 
