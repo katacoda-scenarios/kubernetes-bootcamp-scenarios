@@ -8,7 +8,7 @@ Confirm that the service is gone:
 
 This confirms that our Service was removed. To confirm that route is not exposed anymore you can `curl` the previously exposed IP and port:
 
-`curl host01:$NODE_PORT`{{execute}}
+`curl `minikube ip`:$NODE_PORT`{{execute}}
 
 This proves that the app is not reachable anymore from outside of the cluster.
 You can confirm that the app is still running with a curl inside the pod:
