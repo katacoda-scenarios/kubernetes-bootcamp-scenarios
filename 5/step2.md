@@ -1,3 +1,7 @@
+Before continuing with the below step, you must re-enable the `kubernetes-bootcamp` service.
+Refer back to Module 4 or alternatively run the command below:
+`kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080`.
+
 Let’s check that the Service is load-balancing the traffic. To find out the exposed IP and Port we can use the describe service as we learned in the previously Module:
 
 `kubectl describe services/kubernetes-bootcamp`{{execute}}
