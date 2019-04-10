@@ -1,0 +1,34 @@
+{
+	"pathwayTitle": "Kubernetes Bootcamp",
+	"title": "Module 1",
+	"description": "Desplegar un clúster de Kubernetes",
+	"backend": {
+		"port": 30000,
+		"imageid": "minikube"
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": " Despelgar el clúster",
+			"text": "step1.md"
+		}, {
+			"title": "Versión del clúster",
+			"text": "step2.md"
+		}, {
+			"title": "Detalles del clúster",
+			"text": "step3.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
+}
