@@ -4,8 +4,8 @@ Ya hemos instalado minikube por ti. Comprueba que esté correctamente instalado,
 
 Como hemos podido comprobar, minikube está correctamente instalado.
 
-Puedes desplegar el clúster ejecutando el comando *minikube start*:
+Inicia el cluster ejecutando el comando *minikube start*:
 
 `minikube start`{{execute}}
 
-¡Genial! En estos momentos ya puede acceder a un clúster de Kubernetes desde la consola web. Minikube levantó un clúster Kubernetes de un solo nodo en una máquina virtual.
+¡Genial! En estos momentos ya puede acceder a un clúster de Kubernetes desde terminal. Minikube levantó una máquina virtual, y un clúster Kubernetes está siendo ejecutado en esa MV.

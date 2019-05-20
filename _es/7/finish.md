@@ -1,0 +1,1 @@
+#En este tutorial hemos desplegado nuestra primera aplicación Kubernetes, y después observamos que estuviera ejecutándose. En el siguiente escenario haremos debug de nuestra aplicación.#

@@ -1,1 +1,1 @@
-# A lo largo de este tutorial, hemos desplegado un clúster de Kubernetes con minikube, verificado la versión desplegada y consultado los nodos disponibles. En el siguiente escenario desplegaremos nuestra primera aplicación. #
+# A lo largo de este tutorial, hemos desplegado un clúster usando minikube, verificado la versión desplegada y consultado los nodos disponibles. En el siguiente escenario desplegaremos nuestra primera aplicación. #

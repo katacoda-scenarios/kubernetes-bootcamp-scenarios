@@ -1,6 +1,6 @@
 {
 	"pathwayTitle": "Kubernetes Bootcamp",
-	"title": "Module 1",
+	"title": "Módulo 1",
 	"description": "Desplegar un clúster de Kubernetes",
 	"backend": {
 		"port": 30000,
@@ -13,7 +13,7 @@
 	},
 	"details": {
 		"steps": [{
-			"title": " Despelgar el clúster",
+			"title": "Despelgar el clúster",
 			"text": "step1.md"
 		}, {
 			"title": "Versión del clúster",
