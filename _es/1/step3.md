@@ -8,4 +8,5 @@ Para ver los nodos en el clúster, puedes ejecutar el comando *kubectl get nodes
 
 `kubectl get nodes`{{execute}}
 
-Este comando muestra todos los nodos disponibles para ejecutar nuestras aplicaciones. En estos momentos, solo tenemos un nodo y podemos ver que su estado está *Ready*, es decir, listo para ejecutar cargas de trabajo
+Este comando muestra todos los nodos disponibles para ejecutar nuestras aplicaciones. En estos momentos, solo tenemos un nodo y podemos ver que su estado está *ready*, es decir, listo para ejecutar cargas de trabajo.
+

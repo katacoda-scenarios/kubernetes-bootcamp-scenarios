@@ -3,4 +3,4 @@ Para comprobar si kubectl está instalado, puede ejecutar el comando *kubectl ve
 
 `kubectl version`{{execute}}
 
-¡Perfecto!, Kubectl está configurado y podemos ver tanto la versión del cliente como el servidor. La versión del cliente es la versión kubectl; La versión del servidor es la versión de Kubernetes instalada en el clúster. También puede se pueden ver detalles sobre la construcción del kubectl.
+OK, kubectl está configurado y podemos ver tanto la versión del cliente como el servidor. La versión del cliente es la versión kubectl; La versión del servidor es la versión de Kubernetes instalada en el clúster. También puede se pueden ver detalles sobre la construcción del kubectl.
