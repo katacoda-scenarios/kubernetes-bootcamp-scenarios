@@ -1,3 +1,13 @@
 # i18n strings for Spanish content
 continue: "Continuar"
 start_scenario: "Empezar escenario"
+welcome: "Bienvenido"
+difficulty: "dificultad"
+time: "tiempo"
+steps: "pasos"
+step: "paso"
+of: "de"
+answer: "pregunta"
+solution: "solucion"
+show: "mostrar"
+terminal: "terminal"
