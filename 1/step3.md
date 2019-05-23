@@ -7,5 +7,5 @@ To view the nodes in the cluster, run the *kubectl get nodes* command:
 
 `kubectl get nodes`{{execute}}
 
-This command shows all nodes that can be used to host our applications. Now we have only one node, and we can see that it’s status is ready (it is ready to accept applications for deployment). 
+This command shows all nodes that can be used to host our applications. Now we have only one node, and we can see that its status is ready (it is ready to accept applications for deployment). 
 
