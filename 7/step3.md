@@ -12,7 +12,7 @@ We will open a second terminal window to run the proxy.
 
 We now have a connection between our host (the online terminal) and the Kubernetes cluster. The  proxy enables direct access to the API from these terminals.
 
-You can see all those APIs hosted through the proxy endpoint, now available at through http://localhost:8001. For example, we can query the version directly through the API using the `curl` command:
+You can see all those APIs hosted through the proxy endpoint, now available at http://localhost:8001. For example, we can query the version directly through the API using the `curl` command:
 
 `curl http://localhost:8001/version`{{execute T1}}
 
