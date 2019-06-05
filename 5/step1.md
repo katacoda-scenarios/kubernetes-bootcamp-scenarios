@@ -3,9 +3,11 @@ To list your deployments use the `get deployments` command:
 
 We should have 1 Pod. If not, run the command again. This shows:
 
-The DESIRED state is showing the configured number of replicas
+The READY column shows the ratio of CURRENT to DESIRED replicas
 
-The CURRENT state show how many replicas are running now
+CURRENT is the number of replicas running now
+
+DESIRED is the configured number of replicas
 
 The UP-TO-DATE is the number of replicas that were updated to match the desired (configured) state
 
