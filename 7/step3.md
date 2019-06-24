@@ -8,7 +8,7 @@ The `kubectl` command can create a proxy that will forward communications into t
 
 We will open a second terminal window to run the proxy.
 
-`echo "Starting Proxy. After starting it will not output a response."; kubectl proxy`{{execute T2}}
+`echo -e "\n\n\n\e[92mStarting Proxy. After starting it will not output a response. Please click the first Terminal Tab\n"; kubectl proxy`{{execute T2}}
 
 We now have a connection between our host (the online terminal) and the Kubernetes cluster. The  proxy enables direct access to the API from these terminals.
 

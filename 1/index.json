@@ -1,6 +1,6 @@
 {
 	"pathwayTitle": "Kubernetes Bootcamp",
-	"title": "Module 1",
+	"title": "Module 1 - Create a Kubernetes cluster",
 	"description": "Create a Kubernetes cluster",
 	"backend": {
 		"port": 30000,

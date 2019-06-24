@@ -1,6 +1,6 @@
 {
 	"pathwayTitle": "Kubernetes Bootcamp",
-	"title": "Module 2",
+	"title": "Module 2 - Deploy an app",
 	"description": "Deploy an app",
 	"backend": {
 		"port": 30000,
