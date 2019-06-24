@@ -1,7 +1,7 @@
 Recall that Pods are running in an isolated, private network - so we need to proxy access
 to them so we can debug and interact with them. To do this, we'll use the `kubectl proxy` command to run a proxy in a second terminal window. Click on the command below to automatically open a new terminal and run the `proxy`:
 
-`kubectl proxy`{{execute T2}}
+`echo "Starting Proxy. After starting it will not output a response."; kubectl proxy`{{execute T2}}
 
 Now again, we'll get the Pod name and query that pod directly through the proxy.
 To get the Pod name and store it in the POD_NAME environment variable:
