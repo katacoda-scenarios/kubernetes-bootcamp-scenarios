@@ -8,13 +8,18 @@ The `kubectl` command can create a proxy that will forward communications into t
 
 We will open a second terminal window to run the proxy.
 
-`echo -e "\n\n\n\e[92mStarting Proxy. After starting it will not output a response. Please click the first Terminal Tab\n"; kubectl proxy`{{execute T2}}
+```
+echo -e "\n\n\n\e[92mStarting Proxy. After starting it will not output a response. Please click the first Terminal Tab\n"; 
+kubectl proxy
+```{{execute T2}}
 
 We now have a connection between our host (the online terminal) and the Kubernetes cluster. The  proxy enables direct access to the API from these terminals.
 
 You can see all those APIs hosted through the proxy endpoint, now available at http://localhost:8001. For example, we can query the version directly through the API using the `curl` command:
 
 `curl http://localhost:8001/version`{{execute T1}}
+
+**If Port 8001 is not accessible, ensure that the `kubectl proxy` started above is running.**
 
 The API server will automatically create an endpoint for each pod, based on the pod name, that is also accessible through the proxy.
 
