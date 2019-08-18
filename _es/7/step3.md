@@ -8,9 +8,11 @@ El comando `kubectl` puede crear un proxy que reenviará las comunicaciones de l
 Abriremos una segunda ventana de la terminal para correr el proxy.
 `kubectl proxy`{{execute T2}}
 
+*Note: Verifica la parte superior de la terminal. El proxy se ejecutó en una nueva pestaña (Terminal 2), y los comandos mas recientes fueron ejecutados en la pestaña original (Terminal 1). El proxy aún se ejecuta en la segunda terminal, y esto permitió que nuestro comando curl funcione, usando `localhost:8001`.*
+
 Ahora tenemos una conexión entre nuestro host (la terminal online) y el cluster de kubernetes. El proxy habilita el acceso a la API desde esas terminales.
 
-Podemos ver todas las APIs alojadas a travéz del endpoint proxy, ahora disponible en http://localhost:8001. Por ejemplo, podemos consultar la version directamente desde la API usando el comando `curl`:
+Podemos ver todas las APIs alojadas a travéz del endpoint proxy. Por ejemplo, podemos consultar la version directamente desde la API usando el comando `curl`:
 
 `curl http://localhost:8001/version`{{execute T1}}
 
