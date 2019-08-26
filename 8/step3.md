@@ -15,4 +15,4 @@ You can confirm that the app is still running with a curl inside the pod:
 
 `kubectl exec -ti $POD_NAME curl localhost:8080`{{execute}}
 
-We see here that the application is up.
+We see here that the application is up. This is because the Deployment is managing the application. To shut down the application, you would need to delete the Deployment as well.
