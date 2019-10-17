@@ -10,6 +10,6 @@ Next, to view what containers are inside that Pod and what images are used to bu
 
 We see here details about the Pod’s container: IP address, the ports used and a list of events related to the lifecycle of the Pod.
 
-The output of the describe command is extensive and covers some concepts that we didn’t explain yet, but don’t worry, they will become familiar by the end of this bootcamp.
+The output of the `describe` command is extensive and covers some concepts that we didn’t explain yet, but don’t worry, they will become familiar by the end of this bootcamp.
 
 *Note: the describe command can be used to get detailed information about most of the kubernetes primitives: node, pods, deployments. The describe output is designed to be human readable, not to be scripted against.*
