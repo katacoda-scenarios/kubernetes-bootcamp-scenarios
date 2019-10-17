@@ -28,10 +28,6 @@ First we need to get the Pod name, and we'll store in the environment variable P
 `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 echo Name of the Pod: $POD_NAME`{{execute T1}}
 
-Now we can make an HTTP request to the application running in that pod:
-
-`curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/`{{execute T1}}
-
-The url is the route to the API of the Pod.
-
 *Note: Check the top of the terminal. The proxy was run in a new tab (Terminal 2), and the recent commands were executed the original tab (Terminal 1). The proxy still runs in the second tab, and this allowed our curl command to work using `localhost:8001`.*
+
+In order for the new deployment to be accessible without using the Proxy, a Service is required which will be explained in the next modules.
