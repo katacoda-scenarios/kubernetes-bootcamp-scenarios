@@ -17,6 +17,6 @@ You can check that the application is up by running a curl command:
 
 `curl localhost:8080`{{execute T1}}
 
-*Note: here we used localhost because we executed the command inside the NodeJS container*
+*Note: here we used localhost because we executed the command inside the NodeJS Pod. If you cannot connect to localhost:8080, check to make sure you have run the kubectl exec command and are launching the command from within the Pod*
 
 To close your container connection type `exit`{{execute T1}}.

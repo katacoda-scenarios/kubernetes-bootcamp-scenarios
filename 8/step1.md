@@ -2,6 +2,8 @@ Let’s verify that our application is running. We’ll use the `kubectl get` co
 
 `kubectl get pods`{{execute}}
 
+If no pods are running then it means the interactive environment is still reloading it's previous state. Please wait a couple of seconds and list the Pods again. You can continue once you see the one Pod running.
+
 Next let’s list the current Services from our cluster:
 
 `kubectl get services`{{execute}}
