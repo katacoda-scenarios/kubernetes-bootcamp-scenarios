@@ -1,6 +1,6 @@
-Ejecutemos nuestra primera aplicación en Kubernetes con el comando `kubectl run`. El comando `run` crea un nuevo despliegue. Necesitamos proveer el nombre del despliegue y la ubicación de la imagen. (incluyendo la ruta completa para las imagenes alojadas fuera de Docker hub). Queremos ejecutar en un puerto específico, entonces añadimos el parámetro:
+Ejecutemos nuestra primera aplicación en Kubernetes con el comando `kubectl run`. El comando `run` crea un nuevo despliegue. Necesitamos proveer el nombre del despliegue y la ubicación de la imagen. (incluyendo la ruta completa para las imagenes alojadas fuera de Docker hub).
 
-`kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080`{{execute}}
+`kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1`{{execute}}
 
 ¡Genial! Acabas de desplegar tu primera aplicación crando un despliegue. Esto ejecuto varias cosas por ti:
 - Buscó un nodo apropiado donde la instancia de la aplicación pueda ser desplegada (nosotros tenemos solamente 1 nodo disponible).

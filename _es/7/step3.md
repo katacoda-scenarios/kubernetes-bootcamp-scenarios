@@ -12,21 +12,17 @@ Abriremos una segunda ventana de la terminal para correr el proxy.
 
 Ahora tenemos una conexión entre nuestro host (la terminal online) y el cluster de kubernetes. El proxy habilita el acceso a la API desde esas terminales.
 
-Podemos ver todas las APIs alojadas a travéz del endpoint proxy. Por ejemplo, podemos consultar la version directamente desde la API usando el comando `curl`:
+Podemos ver todas las APIs alojadas a través del endpoint proxy. Por ejemplo, podemos consultar la version directamente desde la API usando el comando `curl`:
 
 `curl http://localhost:8001/version`{{execute T1}}
 
-El API creará automáticamente un endpoint por cada pod, basado en el pod name, que es también accesible a travéz del proxy.
+La API creará automáticamente un endpoint por cada pod, basado en el pod name, que es también accesible a través del proxy.
 
 Primero necesitamos obtener el nombre del pod, y lo almacenaremos en la variable POD_NAME:
 
 `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 echo Name of the Pod: $POD_NAME`{{execute T1}}
 
-Ahora podemos hacer una petición HTTP a la aplicación que está corriendo en ese nodo:
-
-`curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/`{{execute T1}}
-
-La url es la ruta a la API del Pod.
-
 *Note: Verifica la parte superior de la terminal. El proxy se ejecutó en una nueva pestaña (Terminal 2), y los comandos mas recientes fueron ejecutados en la pestaña original (Terminal 1). El proxy aún se ejecuta en la segunda terminal, y esto permitió que nuestro comando curl funcione, usando `localhost:8001`.*
+
+Para que el nuevo despliegue sea accesible sin usar el Proxy, se requiere un Servicio que se explicará en los siguientes módulos.

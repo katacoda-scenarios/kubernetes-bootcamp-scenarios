@@ -1,0 +1,1 @@
+#En este tutorial aprendiste como solucionar problemas basicos para tus aplicaciones Kubernetes. Ahora deberias saber que comandos usar para visualizar logs, listar recursos y ejecutar comandos en los contenedores. #
