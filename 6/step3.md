@@ -27,4 +27,4 @@ Four Pods are running. Check again the image deployed on the them:
 
 `kubectl describe pods`{{execute}}
 
-We see that the deployment is using a stable version of the app (v2). The Rollback was successful.
+We see that the deployment is using a stable version of the app (v1). The Rollback was successful.
