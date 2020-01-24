@@ -1,17 +1,27 @@
 To list your deployments use the `get deployments` command:
 `kubectl get deployments`{{execute}}
 
+The output should be similar to:
+```
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
+kubernetes-bootcamp   1/1     1            1           11m
+```
+
 We should have 1 Pod. If not, run the command again. This shows:
+- *NAME* lists the names of the Deployments in the cluster.
+- *READY* shows the ratio of CURRENT/DESIRED replicas
+- *UP-TO-DATE* displays the number of replicas that have been updated to achieve the desired state.
+- *AVAILABLE* displays how many replicas of the application are available to your users.
+- *AGE* displays the amount of time that the application has been running.
 
-The READY column shows the ratio of CURRENT to DESIRED replicas
+To see the ReplicaSet created by the Deployment, run
+`kubectl get rs`{{execute}}
 
-CURRENT is the number of replicas running now
+Notice that the name of the ReplicaSet is always formatted as `[DEPLOYMENT-NAME]-[RANDOM-STRING]`. The random string is randomly generated and uses the pod-template-hash as a seed.
 
-DESIRED is the configured number of replicas
-
-The UP-TO-DATE is the number of replicas that were updated to match the desired (configured) state
-
-The AVAILABLE state shows how many replicas are actually AVAILABLE to the users
+Two important columns of this command are:
+- *DESIRED* displays the desired number of replicas of the application, which you define when you create the Deployment. This is the desired state.
+- *CURRENT* displays how many replicas are currently running.
 
 Next, let’s scale the Deployment to 4 replicas. We’ll use the `kubectl scale` command, followed by the deployment type, name and desired number of instances:
 
