@@ -13,13 +13,13 @@
 	},
 	"details": {
 		"steps": [{
-			"title": "Klaster dimulai dan berjalan",
+			"title": "Memulai dan menjanlankan Klaster",
 			"text": "step1.md"
 		}, {
-			"title": "Versi klaster",
+			"title": "Melihat versi klaster",
 			"text": "step2.md"
 		}, {
-			"title": "Detail klaster",
+			"title": "Melihat detail klaster",
 			"text": "step3.md"
 		}],
 		"intro": {
