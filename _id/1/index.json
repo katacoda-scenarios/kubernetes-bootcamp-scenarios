@@ -1,0 +1,34 @@
+{
+	"pathwayTitle": "Kubernetes Bootcamp",
+	"title": "Modul 1 - Membuat sebuah klaster Kubernetes",
+	"description": "Membuat sebuah klaster Kubernetes",
+	"backend": {
+		"port": 30000,
+		"imageid": "minikube"
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": "Klaster dimulai dan berjalan",
+			"text": "step1.md"
+		}, {
+			"title": "Versi klaster",
+			"text": "step2.md"
+		}, {
+			"title": "Detail klaster",
+			"text": "step3.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
+}
