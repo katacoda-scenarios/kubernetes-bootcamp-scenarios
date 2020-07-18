@@ -1,4 +1,4 @@
-Let’s check that the Service is load-balancing the traffic. To find out the exposed IP and Port we can use the describe service as we learned in the previously Module:
+Let’s check that the Service is load-balancing the traffic. To find out the exposed IP and Port we can use the describe service as we learned in the previous Module:
 
 `kubectl describe services/kubernetes-bootcamp`{{execute}}
 
