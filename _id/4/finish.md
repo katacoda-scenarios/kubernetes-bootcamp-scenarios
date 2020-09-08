@@ -1,0 +1,1 @@
+#Dalam tutorial ini kamu belajar bagaimana mengatasi masalah dasar untuk aplikasi Kubernetes-mu. Kamu seharusnya sekarang telah mengetahui perintah yang digunakan untuk melihat catatan (_logs_), daftar sumber daya, dan eksekusi perintah dalam kontainer. #
