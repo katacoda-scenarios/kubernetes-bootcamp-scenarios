@@ -1,5 +1,5 @@
 {
-	"title": "Module 4 - Mengekspos aplikasi secara publik",
+	"title": "Modul 4 - Mengekspos aplikasi secara publik",
 	"description": "Mengekspos aplikasi secara publik",
 	"pathwayTitle": "Kubernetes Bootcamp",
 	"backend": {
@@ -13,14 +13,14 @@
 	},
 	"details": {
 		"steps": [{
-			"title": "Langkah 1 Membuat Service baru",
+			"title": "Langkah 1: Membuat Service baru",
 			"code": "foreground.sh",
 			"text": "step1.md"
 		}, {
-			"title": "Step 2: Penggunaan label",
+			"title": "Langkah 2: Penggunaan label",
 			"text": "step2.md"
 		}, {
-			"title": "Step 3 Menghapus sebuah Service",
+			"title": "Langkah 3: Menghapus sebuah Service",
 			"text": "step3.md"
 		}],
 		"intro": {
