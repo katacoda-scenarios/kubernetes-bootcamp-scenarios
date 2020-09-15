@@ -1,0 +1,1 @@
+# Pada sesi kali ini kita telah menunjukkan bagaimana cara menskalakan aplikasimu, dan bagaimana menguji _load balancing_. #

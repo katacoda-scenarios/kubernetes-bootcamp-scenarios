@@ -1,0 +1,36 @@
+{
+	"title": "Modul 5 - Menskalakan aplikasimu",
+	"description": "Menskalakan aplikasimu",
+	"pathwayTitle": "Kubernetes Bootcamp",
+	"backend": {
+		"port": 30000,
+		"dockerimage": "minikube-running"
+	},
+	"files": ["App"],
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": "Langkah 1: Meningkatkan skala deployment",
+			"code": "foreground.sh",
+			"text": "step1.md"
+		}, {
+			"title": "Langkah 2: Load balancing",
+			"text": "step2.md"
+		}, {
+			"title": "Langkah 3: Menurunkan skala deployment",
+			"text": "step3.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
+}
