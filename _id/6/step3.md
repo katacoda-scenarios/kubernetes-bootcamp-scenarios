@@ -11,19 +11,19 @@ Daftarkan Pod kembali:
 
 `kubectl get pods`{{execute}}
 
-Perintah `describe` pada Pod dapat memberi pemahaman tambahan terkait permasalahan ini:
+Perintah `describe` pada Pod dapat memberi informasi tambahan terkait permasalahan ini:
 
 `kubectl describe pods`{{execute}}
 
-Tidak ada _image_ dengan tag `v10` di repositori. Mari kita kembali ke versi sebelumnya yang tidak bermasalah. Untuk itu kita akan menggunakan perintah `rollout undo`:
+Tidak ada _image_ dengan tag `v10` di repositori. Mari kita kembalikan Deployment ke versi sebelumnya yang tidak bermasalah. Untuk itu kita akan menggunakan perintah `rollout undo`:
 
 `kubectl rollout undo deployments/kubernetes-bootcamp`{{execute}}
 
-Perintah `rollout` mengembalikan _deployment_ ke keadaan sebelumnya yang diketahui berjalan dengan baik (_image_ dengan versi v2). Pembaruan Deployment memiliki versi masing-masing dan kamu dapat kembali ke versi sebelumnya yang diketahui berkerja dengan sempurna. Coba daftarkan Pod kembali:
+Perintah `rollout` mengembalikan _deployment_ ke keadaan sebelumnya yang diketahui berjalan dengan baik (_image_ dengan versi v2). Setiap pembaruan memiliki versi tersendiri dan kamu dapat kembali ke versi sebelumnya (yang stabil). Coba daftarkan Pod kembali:
 
 `kubectl get pods`{{execute}}
 
-Saat ini empat Pod sedang berjalan. Periksa kembali versi image yang digunakan pada semua Pod tersebut:
+Saat ini empat Pod sedang berjalan. Periksa kembali versi _image_ yang digunakan pada semua Pod tersebut:
 
 `kubectl describe pods`{{execute}}
 

@@ -2,14 +2,14 @@ Mari periksa apakah aplikasi yang kita _deploy_ di skenario sebelumnya sedang be
 
 `kubectl get pods`{{execute}}
 
-Jika tidak ada Pod yang berjalan maka artinya lingkungan interaktif masih memuat ulang _state_ sebelumnya. Harap tunggu beberapa detik dan mendaftar Pod lagi. Kamu bisa lanjut setelah melihat satu Pod berjalan.
+Jika tidak ada Pod yang berjalan maka artinya lingkungan interaktif masih memuat ulang keadaan sebelumnya. Harap tunggu beberapa detik dan mendaftar Pod lagi. Kamu bisa lanjut setelah melihat satu Pod berjalan.
 
 Selanjutnya, daftarkan Service yang ada di dalam klaster:
 
 `kubectl get services`{{execute}}
 
 Kita memiliki sebuah Service bernama kubernetes yang dibuat langsung ketika minikube menjalankan klaster.
-Untuk membuat Service baru dan mengeksposnya secara publik, kita akan menggunakan perintah expose dengan NodePort sebagai parameter (minikube saat ini belum mendukung opsi LoadBalancer).
+Untuk membuat Service baru dan mengeksposnya secara publik, kita akan menggunakan perintah `expose` dengan NodePort sebagai parameter (minikube saat ini belum mendukung opsi LoadBalancer).
 
 `kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080`{{execute}}
 
@@ -23,13 +23,13 @@ Untuk mengetahui porta mana yang dibuka ke luar (dengan opsi NodePort), kita aka
 
 `kubectl describe services/kubernetes-bootcamp`{{execute}}
 
-Buat satu variabel lingkungan dengan nama NODE_PORT yang menyimpan nilai dari porta Node yand diberikan:
+Buat satu variabel lingkungan dengan nama NODE_PORT yang menyimpan nilai dari porta Node:
 
 `export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
 echo NODE_PORT=$NODE_PORT`{{execute}}
 
-Sekarang kita dapat mengecek apakah aplikasi kita sudah terkspos ke luar klaster dengan menggunakan `curl`, IP dari Node dan porta yang terkespos ke luar:
+Sekarang kita dapat memeriksa apakah aplikasi kita sudah terkspos ke luar klaster dengan menggunakan `curl`, IP dari Node dan porta yang terkespos ke luar:
 
 `curl $(minikube ip):$NODE_PORT`{{execute}}
 
-Dan kita mendapatkan response dari server. Service telah berhasil diekspos.
+Dalam hal ini kita mendapatkan response dari _server_. Service telah berhasil diekspos.

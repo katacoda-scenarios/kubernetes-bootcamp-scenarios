@@ -2,7 +2,7 @@ Untuk mengurangi skala Deployment ke 2 replika, jalankan kembali perintah `scale
 
 `kubectl scale deployments/kubernetes-bootcamp --replicas=2`{{execute}}
 
-Daftar Deployment dengan perintah `get deployments` untuk memeriksa apakan perubahan yang dilakukan di atas sudah diterapkan: 
+Daftar Deployment dengan perintah `get deployments` untuk memeriksa apakah perubahan yang dilakukan di atas sudah diterapkan:
 
 `kubectl get deployments`{{execute}}
 

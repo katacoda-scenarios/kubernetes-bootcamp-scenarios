@@ -1,5 +1,5 @@
 Pod yang berjalan di dalam Kubernetes berjalan di atas jaringan privat dan terisolasi.
-Secara default suatu Pod dapat dilihat dari Pod dan Service lain dalam satu klaster Kubernetes yang sama, tetapi tidak dari luar jaringan tersebut.
+Secara bawaan, suatu Pod dapat dilihat dari Pod dan Service lain dalam satu klaster Kubernetes yang sama, tetapi tidak dari luar jaringan tersebut.
 Ketika menggunakan `kubectl`, kita berinteraksi melalui _endpoint_ API untuk berkomunikasi dengan aplikasi kita.
 
 Kita akan membahas opsi-opsi lain untuk mengekspos aplikasimu ke luar klaster Kubernetes di dalam Modul 4.

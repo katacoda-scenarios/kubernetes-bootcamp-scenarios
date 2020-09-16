@@ -3,13 +3,13 @@ ke mereka sehingga kita dapat men-_debug_ dan berinteraksi. Untuk ini, kita akan
 
 `echo -e "\n\n\n\e[92mMemulai Proxy. Setelah dimulai tidak akan ada respon keluaran. Silahkan klik Tab Terminal pertama\n"; kubectl proxy`{{execute T2}}
 
-Kembali lagi, kita akan mengambil nama Pod dan kueri pod secara langsung melalu proksi.
-Untuk mendapatkan nama Pod dan menyimpannya dalam variabel lingkungan POD_NAME:
+Kembali lagi, kita akan mengambil nama Pod dan kueri Pod secara langsung melalui proksi.
+Untuk mendapatkan nama Pod dan menyimpannya dalam variabel lingkungan POD_NAME jalankan:
 
 `export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 echo Nama Pod: $POD_NAME`{{execute T1}}
 
-Untuk melihat hasil dari aplikasi kita, jalankan _request_ `curl`.
+Untuk melihat hasil dari aplikasi kita, jalankan perintah `curl` berikut:
 
 `curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/`{{execute T1}}
 

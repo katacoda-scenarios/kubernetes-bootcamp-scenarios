@@ -1,6 +1,6 @@
 {
-	"title": "Modul 5 - Menskalakan aplikasimu",
-	"description": "Menskalakan aplikasimu",
+	"title": "Modul 5 - Melakukan penyekalaan aplikasimu",
+	"description": "Melakukan penyekalaan aplikasimu",
 	"pathwayTitle": "Kubernetes Bootcamp",
 	"backend": {
 		"port": 30000,
@@ -18,7 +18,7 @@
 			"code": "foreground.sh",
 			"text": "step1.md"
 		}, {
-			"title": "Langkah 2: Load balancing",
+			"title": "Langkah 2: Menyeimbangkan beban",
 			"text": "step2.md"
 		}, {
 			"title": "Langkah 3: Menurunkan skala deployment",
