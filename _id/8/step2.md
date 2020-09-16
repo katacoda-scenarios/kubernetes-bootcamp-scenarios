@@ -2,7 +2,7 @@ Deployment membuat label secara otomatis untuk Pod kita. Kamu dapat melihat nama
 
 `kubectl describe deployment`{{execute}}
 
-Gunakan label tersebut untuk mendaftar Pod yang ada. Jalankan perintah `kubectl get pods` dengan parameter -l diikuti dengan nama label:
+Gunakan label tersebut untuk mendaftar Pod yang ada. Jalankan perintah `kubectl get pods` dengan parameter `-l` diikuti dengan nama label:
 
 `kubectl get pods -l run=kubernetes-bootcamp`{{execute}}
 

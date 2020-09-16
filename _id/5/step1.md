@@ -25,7 +25,7 @@ Dua kolom penting dari keluaran perintah ini adalah:
 - *DESIRED* menampilkan jumlah replika yang diharapkan dari aplikasi yang kamu definisikan ketika membuat Deployment
 - *CURRENT* menunjukkan jumlah replika yang sedang berjalan
 
-Selanjutnya, mari skalakan Deployment menjadi 4 replika. Kita akan menggunakan perintah `kubectl scale`, diikuti dengan tipe _deployment_, nama dan jumlah instans yang diinginkan:
+Selanjutnya, mari lakukan penyekalaan Deployment menjadi 4 replika. Kita akan menggunakan perintah `kubectl scale`, diikuti dengan tipe _deployment_, nama dan jumlah instans yang diinginkan:
 
 `kubectl scale deployments/kubernetes-bootcamp --replicas=4`{{execute}}
 
@@ -33,11 +33,11 @@ Untuk mendaftar Deployment kembali, gunakan perintah `get deployments`:
 
 `kubectl get deployments`{{execute}}
 
-Perubahan sebelumnya telah diterapkan, saat ini kita memiliki 4 instans aplikasi yang tersedia. Selanjutnya, periksa juga apakah jumlah Pod telah berubah:
+Perubahan sebelumnya telah diterapkan, saat ini sudah tersedia 4 instans aplikasi. Selanjutnya, periksa juga apakah jumlah Pod telah berubah:
 
 `kubectl get pods -o wide`{{execute}}
 
-Saat ini sudah ada 4 Pod dengan alamat IP yang berbeda. Perubahan ini sudah tercatat di dalam _log_. Untuk memastikan perubahan tersebut, kamu juga dapat menggunakan perintah `describe`:
+Saat ini sudah ada 4 Pod dengan alamat IP yang berbeda. Perubahan ini sudah tercatat di dalam log. Untuk memastikan perubahan tersebut, kamu juga dapat menggunakan perintah `describe`:
 
 `kubectl describe deployments/kubernetes-bootcamp`{{execute}}
 

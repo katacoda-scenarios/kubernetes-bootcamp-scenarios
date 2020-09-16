@@ -13,17 +13,17 @@
 	},
 	"details": {
 		"steps": [{
-			"title": "Langkah 1 Memeriksa konfigurasi aplikasi",
+			"title": "Langkah 1: Memeriksa konfigurasi aplikasi",
 			"code": "foreground.sh",
 			"text": "step1.md"
 		}, {
-			"title": "Langkah 2 Tampilkan aplikasi di terminal",
+			"title": "Langkah 2: Tampilkan aplikasi di terminal",
 			"text": "step2.md"
 		}, {
-			"title": "Langkah 3 Melihat catatan kontainer",
+			"title": "Langkah 3: Melihat log kontainer",
 			"text": "step3.md"
 		}, {
-			"title": "Langkah 4 Mengeksekusi perintah dalam kontainer",
+			"title": "Langkah 4: Mengeksekusi perintah dalam kontainer",
 			"text": "step4.md"
 		}],
 		"intro": {
