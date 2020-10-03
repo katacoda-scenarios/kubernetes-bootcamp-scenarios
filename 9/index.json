@@ -1,0 +1,54 @@
+{
+  "title": "Configuring a Kubernetes Microservice",
+  "description": "Configure a Java Microservice using Kubernetes and MicroProfile",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "",
+        "text": "step1.md",
+        "code": "foreground.sh"
+      },
+      {
+        "title": "",
+        "text": "step2.md"
+      },
+      {
+        "title": "",
+        "text": "step3.md"
+      },
+      {
+        "title": "",
+        "text": "step4.md"
+      },
+      {
+        "title": "",
+        "text": "step5.md"
+      },
+      {
+        "title": "",
+        "text": "step6.md"
+      },
+      {
+        "title": "",
+        "text": "step7.md"
+      }
+    ],
+  "intro": {
+    "text": "intro.md",
+    "courseData": "pre.sh"
+  },
+   "finish": {
+      "text": "finish.md"
+    }
+    },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+	"backend": {
+		"port": 30000,
+		"dockerimage": "minikube-running"
+  },
+  "embedded_survey_url": "https://docs.google.com/forms/d/e/1FAIpQLScMbLRAbaZ8NleOFYRrepdIwCbhClHK3abu3SgzMn1KT_H5iA/viewform?entry.434419381="
+}
