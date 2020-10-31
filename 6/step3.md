@@ -19,11 +19,11 @@ There is no image called `v10` in the repository. Let’s roll back to our previ
 
 `kubectl rollout undo deployments/kubernetes-bootcamp`{{execute}}
 
-The `rollout` command reverted the deployment to the previous known state (v2 of the image). Updates are versioned and you can revert to any previously know state of a Deployment. List again the Pods:
+The `rollout` command reverted the deployment to the previous known state (v2 of the image). Updates are versioned and you can revert to any previously known state of a Deployment. List again the Pods:
 
 `kubectl get pods`{{execute}}
 
-Four Pods are running. Check again the image deployed on the them:
+Four Pods are running. Check again the image deployed on them:
 
 `kubectl describe pods`{{execute}}
 
