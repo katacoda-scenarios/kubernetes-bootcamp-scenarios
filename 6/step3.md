@@ -15,7 +15,7 @@ A `describe` command on the Pods should give more insights:
 
 `kubectl describe pods`{{execute}}
 
-There is no image called `v10` in the repository. Let’s roll back to our previously working version. We’ll use the `rollout` undo command:
+There is no image called `v10` in the repository. Let’s roll back to our previously working version. We’ll use the `rollout undo` command:
 
 `kubectl rollout undo deployments/kubernetes-bootcamp`{{execute}}
 
