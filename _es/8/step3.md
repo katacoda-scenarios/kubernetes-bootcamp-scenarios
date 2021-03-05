@@ -13,6 +13,6 @@ Esto confirma que nuestro Servicio fue eliminado. Para confirmar que la ruta ya 
 Esto demuestra que la aplicación ya no es accesible desde fuera del clúster.
 Puede confirmar que la aplicación todavía se está ejecutando, usando `curl` dentro del pod:
 
-`kubectl exec -ti $POD_NAME curl localhost:8080`{{execute}}
+`kubectl exec -ti $POD_NAME -- curl localhost:8080`{{execute}}
 
 Vemos aquí que la aplicación está activa. Esto se debe a que la implementación está administrando la aplicación. Para cerrar la aplicación, también deberá eliminar la implementación.
