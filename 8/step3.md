@@ -1,6 +1,6 @@
 To delete Services you can use the `delete service` command. Labels can be used also here:
 
-`kubectl delete service -l run=kubernetes-bootcamp`{{execute}}
+`kubectl delete service -l app=kubernetes-bootcamp`{{execute}}
 
 Confirm that the service is gone:
 
