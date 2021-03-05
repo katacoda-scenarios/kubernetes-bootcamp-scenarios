@@ -1,13 +1,13 @@
 We can execute commands directly on the container once the Pod is up and running.
 For this, we use the `exec` command and use the name of the Pod as a parameter. Let’s list the environment variables:
 
-`kubectl exec $POD_NAME env`{{execute T1}}
+`kubectl exec $POD_NAME -- env`{{execute T1}}
 
 Again, worth mentioning that the name of the container itself can be omitted since we only have a single container in the Pod.
 
 Next let’s start a bash session in the Pod’s container:
 
-`kubectl exec -ti $POD_NAME bash`{{execute T1}}
+`kubectl exec -ti $POD_NAME -- bash`{{execute T1}}
 
 We have now an open console on the container where we run our NodeJS application.  The source code of the app is in the server.js file:
 

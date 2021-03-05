@@ -1,13 +1,13 @@
 Kita dapat menjalankan perintah secara langsung di dalam kontainer setelah Pod siap dan berjalan.
 Untuk ini, kita dapat menggunakan perintah `exec` diikuti dengan nama Pod sebagai parameter. Mari kita daftar variabel lingkungan yang ada di kontainer:
 
-`kubectl exec $POD_NAME env`{{execute T1}}
+`kubectl exec $POD_NAME -- env`{{execute T1}}
 
 Lagi-lagi, layak diingatkan lagi bahwa nama kontainer dapat dihilangkan karena kita hanya punya satu kontainer dalam Pod.
 
 Selanjutkan mari kita mulai sesi bash di kontainer:
 
-`kubectl exec -ti $POD_NAME bash`{{execute T1}}
+`kubectl exec -ti $POD_NAME -- bash`{{execute T1}}
 
 Kita sekarang telah membuka konsol dalam kontainer di mana kita menjalankan aplikasi NodeJS kita. Kode sumber dari aplikasi ini ada di dalam berkas server.js:
 

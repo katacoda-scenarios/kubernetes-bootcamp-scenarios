@@ -13,6 +13,6 @@ Hal ini mengonfirmasikan bahwa Service sudah terhapus. Untuk memastikan rute seb
 Hal ini membuktikan bahwa aplikasi sudah tidak dapat diakses lagi dari luar klaster.
 Kamu dapat memastikan bahwa aplikasi tetap berjlan dengan menjalankan `curl` di dalam Pod:
 
-`kubectl exec -ti $POD_NAME curl localhost:8080`{{execute}}
+`kubectl exec -ti $POD_NAME -- curl localhost:8080`{{execute}}
 
 Terlihat aplikasi masih berjalan. Hal ini terjadi karena pengelolaan aplikasi dilakukan oleh Deployment. Untuk mematikan aplikasi, kamu juga perlu menghapus Deployment.
