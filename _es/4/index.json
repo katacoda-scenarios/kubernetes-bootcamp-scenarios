@@ -4,7 +4,7 @@
 	"pathwayTitle": "Kubernetes Bootcamp",
 	"backend": {
 		"port": 30000,
-		"dockerimage": "minikube-running"
+		"dockerimage": "minikube-running:1.20"
 	},
 	"environment": {
 		"uilayout": "terminal",
