@@ -17,7 +17,7 @@ echo Name of the Pod: $POD_NAME`{{execute}}
 
 To apply a new label we use the label command followed by the object type, object name and the new label:
 
-`kubectl label pod $POD_NAME app=v1`{{execute}}
+`kubectl label pods $POD_NAME app=v1`{{execute}}
 
 This will apply a new label to our Pod (we pinned the application version to the Pod), and we can check it with the describe pod command:
 

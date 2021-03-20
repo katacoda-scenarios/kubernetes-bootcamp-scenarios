@@ -17,7 +17,7 @@ echo Name of the Pod: $POD_NAME`{{execute}}
 
 Para aplicar una nueva etiqueta, utilizamos el comando de etiqueta seguido del tipo de objeto, el nombre del objeto y la nueva etiqueta:
 
-`kubectl label pod $POD_NAME app=v1`{{execute}}
+`kubectl label pods $POD_NAME app=v1`{{execute}}
 
 Esto aplicará una nueva etiqueta a nuestro Pod (fijamos la versión de la aplicación al Pod), y podemos verificarlo con el comando `describe pod`:
 
