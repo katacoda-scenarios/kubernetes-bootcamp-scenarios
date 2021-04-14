@@ -4,7 +4,7 @@
 	"description": "Desplegar un clúster de Kubernetes",
 	"backend": {
 		"port": 30000,
-		"imageid": "minikube:1.20"
+		"imageid": "minikube"
 	},
 	"environment": {
 		"uilayout": "terminal",

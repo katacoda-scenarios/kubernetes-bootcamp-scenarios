@@ -4,7 +4,7 @@
 	"description": "Desplegar una aplicación",
 	"backend": {
 		"port": 30000,
-		"dockerimage": "minikube-running:1.20"
+		"dockerimage": "minikube-running"
 	},
 	"environment": {
 		"uilayout": "terminal",
