@@ -1,0 +1,26 @@
+{
+	"pathwayTitle": "Kubernetes Bootcamp",
+	"title": "Build",
+	"description": "",
+	"backend": {
+		"imageid": "minikube-builder:1.20"
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"hideintro": false,
+		"hidefinish": false
+	},
+	"details": {
+		"steps": [{
+			"title": "",
+			"text": "step1.md"
+		}],
+		"intro": {
+			"courseData": "env-init.sh",
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	}
+}
