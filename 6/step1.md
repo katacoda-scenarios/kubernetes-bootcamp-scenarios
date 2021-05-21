@@ -1,11 +1,12 @@
-To list your deployments use the get deployments command:
+To list your deployments, run the `get deployments` command:
 `kubectl get deployments`{{execute}}
 
-To list the running Pods use the `get pods` command:
+To list the running Pods, run the `get pods` command:
 
 `kubectl get pods`{{execute}}
 
-To view the current image version of the app, run a `describe` command against the Pods (look at the Image field):
+To view the current image version of the app, run the `describe pods` command
+and look for the `Image` field:
 
 `kubectl describe pods`{{execute}}
 
