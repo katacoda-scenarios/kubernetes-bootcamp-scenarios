@@ -17,7 +17,7 @@ echo Name of the Pod: $POD_NAME`{{execute}}
 
 Untuk memasang label baru, kita dapat menggunakan perintah label diikuti dengan tipe objek, nama objek dan label baru tersebut:
 
-`kubectl label pod $POD_NAME version=v1`{{execute}}
+`kubectl label pods $POD_NAME version=v1`{{execute}}
 
 Perintah di atas akan memberikan label baru untuk Pod kita (menyematkan versi aplikasi kita pada Pod), dan kita dapat memastikan hal ini dengan perintah describe pod:
 
