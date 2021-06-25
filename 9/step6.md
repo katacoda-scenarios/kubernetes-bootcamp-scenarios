@@ -2,7 +2,7 @@
 
 You will now update your Kubernetes deployment to set the environment variables in your containers, based on the values configured in the ConfigMap and Secret. Edit the `kubernetes.yaml` file (located in the `start` directory). This file defines the Kubernetes deployment.  Note the `valueFrom` field. This specifies the value of an environment variable, and can be set from various sources. Sources include a ConfigMap, a Secret, and information about the cluster. In this example `configMapKeyRef` sets the key `name` with the value of the ConfigMap `sys-app-name`. Similarly, `secretKeyRef` sets the keys `username` and `password` with values from the Secret `sys-app-credentials`.
 
-Open the `/guide-kubernetes-microprofile-config/start/kubernetes.yaml`{{open}} file by clicking on the above link and replace the contents with the following:
+Open the `/sample-kubernetes-config/start/kubernetes.yaml`{{open}} file by clicking on the above link and replace the contents with the following:
 
 <pre class="file" data-target="clipboard">
 apiVersion: apps/v1

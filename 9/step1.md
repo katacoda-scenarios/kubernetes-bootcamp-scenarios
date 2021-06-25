@@ -8,7 +8,7 @@ You should now see the versions of your kubectl client and server. If so, your e
 
 Now you need to navigate into the project directory that has been provided for you.  This contains the implementation of the MicroProfile microservices, configuration for the MicroProfile runtime, and Kubernetes configuration.
 
-`cd guide-kubernetes-microprofile-config/start/`{{execute}}
+`cd sample-kubernetes-config/start/`{{execute}}
 
 You will notice there is a 'finish' directory. This contains the finished code for this tutorial for reference.
 

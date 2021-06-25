@@ -4,5 +4,5 @@ You have used MicroProfile Config to externalize the configuration of two micros
 
 If you would like to look at the code for these microservices follow the link to the github repository. For more information about the MicroProfile specification used in this tutorial, visit the MicroProfile website with the link below.
 
-[Github repository](https://github.com/OpenLiberty/guide-kubernetes-microprofile-config)
+[Github repository](https://github.com/OpenLiberty/sample-kubernetes-config)
 [MicroProfile.io](https://microprofile.io)

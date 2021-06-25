@@ -1,6 +1,6 @@
 ## Modifying the System Microservice
 
-The system service is hardcoded to have `system` as the app name. To make this configurable, you'll add the `appName` member and code to set the `X-App-Name` to the `/guide-kubernetes-microprofile-config/start/system/src/main/java/system/SystemResource.java`{{open}} file. Click on the link above to open the file and then use the Katacode text editor to replace the existing code with the following:
+The system service is hardcoded to have `system` as the app name. To make this configurable, you'll add the `appName` member and code to set the `X-App-Name` to the `/sample-kubernetes-config/start/system/src/main/java/system/SystemResource.java`{{open}} file. Click on the link above to open the file and then use the Katacode text editor to replace the existing code with the following:
 
 <pre class="file" data-target="clipboard">
 package system;
