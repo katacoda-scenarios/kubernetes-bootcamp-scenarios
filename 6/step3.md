@@ -1,4 +1,4 @@
-Let’s perform another update, and deploy image tagged as `v10` :
+Let’s perform another update, and deploy an image tagged with `v10` :
 
 `kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10`{{execute}}
 
@@ -6,25 +6,30 @@ Use `get deployments` to see the status of the deployment:
 
 `kubectl get deployments`{{execute}}
 
-And something is wrong… We do not have the desired number of Pods available.
-List the Pods again:
+Notice that the output doesn't list the desired number of available Pods. Run the `get pods` command to list all Pods:
 
 `kubectl get pods`{{execute}}
 
-A `describe` command on the Pods should give more insights:
+Notice that some of the Pods have a status of `ImagePullBackOff`. 
+
+To get more insight into the problem, run the `describe pods` command:
 
 `kubectl describe pods`{{execute}}
 
-There is no image called `v10` in the repository. Let’s roll back to our previously working version. We’ll use the `rollout undo` command:
+In the `Events` section of the output for the affected Pods, notice that the `v10` image version did not exist in the repository.
+
+To roll back the deployment to your last working version, use the `rollout undo` command:
 
 `kubectl rollout undo deployments/kubernetes-bootcamp`{{execute}}
 
-The `rollout` command reverted the deployment to the previous known state (v2 of the image). Updates are versioned and you can revert to any previously known state of a Deployment. List again the Pods:
+The `rollout undo` command reverts the deployment to the previous known state (v2 of the image). Updates are versioned and you can revert to any previously known state of a deployment. 
+
+Use the `get pods` commands to list the Pods again:
 
 `kubectl get pods`{{execute}}
 
-Four Pods are running. Check again the image deployed on them:
+Four Pods are running. To check the image deployed on these Pods, use the `describe pods` command:
 
 `kubectl describe pods`{{execute}}
 
-We see that the deployment is using a stable version of the app (v2). The Rollback was successful.
+The deployment is once again using a stable version of the app (v2). The rollback was successful.
