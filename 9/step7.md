@@ -33,7 +33,7 @@ You should eventually see the status of **Ready** for the two services. Press `C
 Call the updated system service and check the headers using the curl command:
 
 
-`curl -u bob:bobpwd -D - http://$( minikube ip ):31000/system/properties -o /dev/null`{{execute}}
+`curl -# -I -u bob:bobpwd -D - http://$( minikube ip ):31000/system/properties | grep -i ^X-App-Name:`{{execute}}
 
 You should see that the response `X-App-Name` header has changed from `system` to `my-system`​.
 
