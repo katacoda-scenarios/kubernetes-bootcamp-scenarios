@@ -6,13 +6,14 @@ Confirm that the service is gone:
 
 `kubectl get services`{{execute}}
 
-This confirms that our Service was removed. To confirm that route is not exposed anymore you can `curl` the previously exposed IP and port:
+This confirms that your Service was removed. To confirm that route is not exposed any more, you can use `curl` to fetch from the previously exposed IP and port:
 
-`curl $(minikube ip):$NODE_PORT`{{execute}}
+`curl "http://$(minikube ip):$NODE_PORT"`{{execute}}
 
-This proves that the app is not reachable anymore from outside of the cluster.
-You can confirm that the app is still running with a curl inside the pod:
+This proves that the app is not reachable any more from outside of the cluster.
+You can confirm that the app is still running by running `curl` from
+inside one of the Pods:
 
-`kubectl exec -ti $POD_NAME -- curl localhost:8080`{{execute}}
+`kubectl exec -ti deployment/kubernetes-bootcamp -- curl http://localhost:8080`{{execute}}
 
-We see here that the application is up. This is because the Deployment is managing the application. To shut down the application, you would need to delete the Deployment as well.
+You can see from the output that the application is up, even though you deleted the Service. This is because the Deployment is still managing the application. To shut down the application, you would need to delete the Deployment as well, or scale it to 0 replicas.
