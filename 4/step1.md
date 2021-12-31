@@ -2,7 +2,7 @@ Let’s verify that the application we deployed in the previous scenario is runn
 
 `kubectl get pods`{{execute}}
 
-If no pods are running then it means the interactive environment is still reloading it's previous state. Please wait a couple of seconds and list the Pods again. You can continue once you see the one Pod running.
+If no pods are running then it means the interactive environment is still reloading its previous state. Please wait a couple of seconds and list the Pods again. You can continue once you see the one Pod running.
 
 Next, to view what containers are inside that Pod and what images are used to build those containers we run the `describe pods` command:
 
